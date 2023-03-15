@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>freedom fighters</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        #padma{
+            text-align: center;
+            background-color:greenyellow;
+            margin-left:25%;
+            margin-right:25%;
+        }
+     #img{
+            width:50px;
+            height:50px;
+        }
+        #navbar{
+            margin-left:25%;
+            margin-right: 25%;
+        }
+        /* body{
+            background-image:url(https://img.freepik.com/premium-photo/india-flag-background-design-independence-day-other-celebration_46250-2225.jpg?w=2000);
+            background-position:center;
+            background-size: cover;
+        } */
+        #carousel{
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+     .abc{
+        width: 12px !important;
+        height: 12px !important;
+        border-radius: 50%;
+     }
+     .bi{     
+        color:blue;
+     }
+     .row{
+            margin-left:5%;
+            margin-right:5%;
+        }
+        .card body{
+            text-align: center;
+        }
+        .card footer{
+            margin-left:25%;
+        }
+    .row{
+        background-image: url(data:image/jpeg;base64,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);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    }
+        .body{
+            margin: 25%;
+        }
+    </style>
+</head>
+<body>
+    <div id="padma">
+        <h2>FREEDOM FIGHTERS</h2>
+        </div>
+    <nav class="navbar navbar-expand-lg bg-info navbar-dark">
+        <div class="container-fluid">
+            <div class="navbar-brand">
+                <img  id="img"src ="https://i.ytimg.com/vi/fv6a0X8mpQk/maxresdefault.jpg" alt="">
+            </div>
+
+            <a href="https://www.careerpower.in/freedom-fighters-of-india.html" > HOME  </a>
+              <a href="file:///C:/Users/nirmaan/Desktop/padmalatha%2054/grid(p.l).html">ABOUT US</a>
+            <a href="https://blog.mygov.in/freedom-fighters-who-fought-valiantly-in-indias-independence-movement/">SEARCH</a>
+            <a href="file:///C:/Users/nirmaan/Desktop/padmalatha%2054/model2.html">LOGIN</a>
+            </nav>
+           <id="carousel">
+    <div class="carousel slide" data-bs-ride="carousel" id="carousel123">
+        <ul class="carousel-indicators">
+            <li data-bs-target="#carousel123" data-bs-slide-to="0" class="active abc"></li>
+            <li data-bs-target="#carousel123" data-bs-slide-to="1" class="abc"></li>
+            <li data-bs-target="#carousel123" data-bs-slide-to="2" class="abc"></li>
+            <li data-bs-target="#carousel123" data-bs-slide-to="3" class="abc"></li>
+        </ul>
+        <div class="carousel-inner">
+           <div class="carousel-item active">
+            <img src="https://www.imagediamond.com/blog/wp-content/uploads/2019/07/ledends-5.jpg" alt="no image found" wdith="1400px"  height="1500px">
+           </div>
+           <div class="carousel-item">
+            <img src="https://i.pinimg.com/236x/79/eb/80/79eb80263bd8f3d6c22f30c90fe7f477--jawaharlal-nehru-gandhi.jpg" alt="no image found"  class="w-100">
+           </div> 
+           <div class="carousel-item">
+          <img src="https://quitpit.com/wp-content/uploads/2019/07/Subhash-Chandra-Bose-1-compressor-300x276.jpg" alt="no image found" wdith="1300px" height="1400px">
+           </div>
+           <div class="carousel-item">
+            <img src="https://www.hindipanda.com/wp-content/uploads/2018/08/Rani.jpg" alt="no image found" wdith="900px" height="800px">
+        <div class="carousel-caption">
+           </div>
+        </div>
+    </div>
+    <a href="#carousel123" class="carousel-control-prev" data-bs-slide="prev"><i class="bi bi-caret-left-square-fill">
+        [4:05 pm, 28/02/2023] +91 93817 31045: </i></a>
+    <a href="#carousel123" class="carousel-control-next" data-bs-slide="next"><i class="bi bi-caret-right-square-fill"></i></a>
+</div>
+<div class="row">
+    <div class="card w-50">
+        <div class="card-body">
+            <img src="https://rukminim1.flixcart.com/image/416/416/kdeum4w0/painting/m/m/r/mg5011-gag-original-imafubzstgypwygz.jpeg?q=70"   alt="">
+            <h2> NAME    : SARDAR VALLABAI PATEL   </h2>
+            <h6> DATE OF BIRTH: OCT-31-1875  </h6>
+          <h6 > ADDRESS   : NADIAD,GUJARATH</h6>
+          <h6> EDUCATION  : BARRISTER   </h6>
+           <h6> DIED      : DEC-15-1950 </h6>
+        </div>
+    </div>
+    <div class="card w-50">
+        <div class="card-body">
+            <img src="https://rukminim1.flixcart.com/image/416/416/kggviq80/painting/j/v/g/shree-2405-art-collection-original-imafwp6kdmqadckk.jpeg?q=70"   alt="">
+            <h2> NAME    :  CHANDRASHEKAR TIVARI  </h2>
+            <h6> DATE OF BIRTH:  JULY-23-1906 </h6>
+            <h6 > ROLE IN  :KAKORI CONSPIRACY </h6>
+            <h6> ALSO KNOWN AS :   CHANDRASHEKAR AZAD</h6>
+            <h6> DIED      : FEB-27-1931 </h6>
+        </div>
+        
+        
+    </div>
+    </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
+           
